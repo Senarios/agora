@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Component_6_6" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#e17057;stroke-linecap:round;stroke-width:5px}
+        </style>
+    </defs>
+    <path id="Rectangle_143" fill="none" d="M0 0H40V40H0z"/>
+    <g id="Arrow" transform="translate(32.134 15.596) rotate(90)">
+        <path id="Path_4" d="M249.348 504.56l12 8.016" class="cls-2" transform="matrix(0.087, -0.996, 0.996, 0.087, -524.372, 227.961)"/>
+        <path id="Path_5" d="M261.348 504.56l-12 8.016" class="cls-2" transform="matrix(-0.087, -0.996, 0.996, -0.087, -479.862, 305.028)"/>
+    </g>
+</svg>

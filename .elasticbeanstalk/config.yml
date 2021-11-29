@@ -1,0 +1,12 @@
+branch-defaults:
+  dev:
+    environment: Outdone.-env
+  master:
+    environment: null
+global:
+  application_name: outdone
+  default_ec2_keyname: beanstalk
+  default_platform: 64bit Amazon Linux 2015.03 v1.3.2 running PHP 5.5
+  default_region: us-east-2
+  profile: outdone
+  sc: git
