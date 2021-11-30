@@ -1,3 +1,5 @@
+import { REACT_APP_AGORA_APP_TOKEN } from '../../../new'
+
 const readDefaultState = () => {
   try {
     return JSON.parse(window.sessionStorage.getItem('custom_storage'))
@@ -20,7 +22,7 @@ const defaultState = {
     uid: 0,
     host: true,
     channelName: '',
-    token: "0063619fd64534948e0b2d17b57ed7ce545IABJOGVTCEqmZv3I1JV3FSI+U1wZ9r+zTAyPEXd9y7g0Aot6uF4AAAAAEAAAO0SYWw2mYQEAAQBbDaZh",
+    token: REACT_APP_AGORA_APP_TOKEN,
     resolution: '480p',
     ...readDefaultState(),
     microphoneId: '',
