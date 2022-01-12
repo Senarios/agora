@@ -8,6 +8,8 @@ import RTCClient from "../rtc-client";
 import Tooltip from "@material-ui/core/Tooltip";
 import StreamPlayer from "./meeting/stream-player";
 import "../../../resources/js/components/Home.css";
+import Chat from "../pages/chat/Chat";
+import Input from "../pages/chat/Input";
 
 const useStyles = makeStyles({
   menu: {
@@ -94,6 +96,16 @@ const MeetingPage = () => {
   const params = new URLSearchParams(window.location.search);
 
   useEffect(() => {
+    const user = {
+      userName: "Senarios",
+      profile_picture:
+        "https://lh3.googleusercontent.com/a/AATXAJzwb4yfhKccqqDIiC04BPNonaSSVqNMx0hLU1SF=s96-c",
+      fullName: "Senarios Development",
+      email: "senariosdevelopment@gmail.com",
+      uid: "lDKShWnSkhblXa3iyuZjFJd9Rja2",
+    };
+    localStorage.setItem("user", JSON.stringify(user));
+
     const roleParams = params.get("role");
     if (!config.channel && roleParams !== "audience") {
       history.push("/");
@@ -280,6 +292,23 @@ const MeetingPage = () => {
           </StreamPlayer>
         ) : null}
         <div className="stream-container">
+          <div
+            style={{
+              position: "absolute",
+              bottom: 30,
+              width: "100%",
+              // height: 400,
+              backgroundColor: "transperent",
+              // overflow: "scroll",
+            }}
+          >
+            <Chat />
+          </div>
+
+          <div style={{ position: "absolute", bottom: 0, width: "100%" }}>
+            <Input />
+          </div>
+
           {stateCtx.otherStreams.map((stream, index) => (
             <StreamPlayer
               className={"stream-profile"}

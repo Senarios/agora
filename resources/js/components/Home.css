@@ -146,6 +146,18 @@ body {
   margin-top: 30px;
 }
 
+.default-avatar_view {
+  background-color: #fff de;
+  background-image: url("../assets/view.png");
+  background-size: 20px;
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  margin-left: 0;
+  border-radius: 28px;
+}
+
 .default-avatar {
   background-color: #fff de;
   background-image: url("../assets/avatar.png");
